@@ -1,4 +1,5 @@
 import os
+import requests
 import sqlite3
 import json
 from flask import Flask, render_template, request, jsonify, send_from_directory
@@ -420,3 +421,4 @@ def ai_summarize():
 if __name__ == '__main__':
     init_db()
     app.run(host='0.0.0.0', debug=True, port=5000)
+
